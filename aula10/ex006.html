@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#caixa {
+            font: normal 18pt Arial;
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa">Inserir...</div>
+
+    <script>
+        cx.addEventListener('click', clicar)
+        cx.addEventListener('mouseenter', entrar)
+        cx.addEventListener('mouseout', sair)
+        
+        var cx = window.document.getElementById('caixa')
+
+        function clicar() {
+            cx.innerText = 'Clicou!'
+            cx.style.backgroundColor = 'Red'
+        }
+
+        function entrar() {
+            cx.innerText = 'Entrou!'
+        }
+
+        function sair() {
+            cx.innerText = 'Saiu!'
+            cx.style.backgroundColor = 'Green'
+        }
+    </script>
+</body>
+</html>

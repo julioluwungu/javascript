@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo DOM</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p class="txt">Aqui vai o resultado <br></p>
+    <p id="msg" class="txt">Aprendendo a usar <strong>DOM</strong> em JavaScript <br></p>
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementById('msg')
+        var p2 = window.document.getElementsByClassName('txt')[0]
+        var p3 = window.document.getElementsByTagName('p')[0]
+        var p4 = window.document.getElementsByName('nome')[0]
+        var p5 = window.document.querySelector('p#msg')
+
+        corpo.style.backgroundColor = 'Blue'
+        p1.style.color = 'White'
+        p5.style.textDecoration = 'Underline'
+
+        window.document.write(p1.innerHTML)
+        window.document.write(p2.innerHTML)
+    </script>
+</body>
+</html>

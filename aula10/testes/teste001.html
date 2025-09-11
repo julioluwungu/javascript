@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gray;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu uebi saite</h1>
+
+    <script>
+        var nome = window.prompt('Digite o seu nome:')
+        var res = window.confirm('Tás bom?')
+        document.write(`Resposta: ${res}`)
+        document.write(`O seu nome possui ${nome.length} caracteres.<br>`)
+        document.write(`O seu nome em maiúsculo fica ${nome.toUpperCase()}<br>`)
+        document.write(`O seu nome em minúsculo fica ${nome.toLowerCase()}<br>`)
+    </script>
+</body>
+</html>
