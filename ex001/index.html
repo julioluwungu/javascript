@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        img#imagem {
+            display: block;
+            width: 100px;
+            margin: auto;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            width: 300px;
+            height: 180px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.477);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hora do Dia</h1>
+    <main>
+        <p>Agora são <span id="hora"></span> horas</p>
+        <img id="imagem" src="imagens/instagram.webp" alt="Foto do Dia">
+    </main>
+
+    <script>
+        var data = new Date()
+        var hora = data.getHours()
+        var hora_atual = document.querySelector('span#hora')
+        hora_atual.innerText = hora
+        if (hora <= 11) {
+            document.img[src] = 'imagens/twitter01.png'
+            document.body.style.backgroundColor = 'lightskyblue'
+        } else if (hora <= 17) {
+            document.body.style.backgroundColor = 'orange'
+        } else {
+            document.body.style.backgroundColor = 'gray'
+        }
+    </script>
+</body>
+</html>
