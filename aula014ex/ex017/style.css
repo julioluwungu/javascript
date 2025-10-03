@@ -5,19 +5,25 @@ body {
     background-color: lightskyblue;
 }
 
-header h1, p {
+header h1 {
     text-align: center;
+    color: white;
 }
 
-section {
+form {
     background-color: white;
-    width: 300px;
+    width: 400px;
     margin: auto;
     padding: 10px;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
+}
+
+form > div {
+    margin-left: 10px;
 }
 
 footer {
+    text-align: center;
     color: white;
 }

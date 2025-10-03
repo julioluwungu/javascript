@@ -5,25 +5,17 @@ body {
     background-color: lightskyblue;
 }
 
-header h1 {
-    color: white;
-}
-
 header h1, p {
     text-align: center;
 }
 
 form {
     background-color: white;
-    width: 300px;
+    width: 450px;
     margin: auto;
     padding: 10px;
     border-radius: 10px;
     text-align: left;
-}
-
-div {
-    margin: 10px 0px;
 }
 
 footer {

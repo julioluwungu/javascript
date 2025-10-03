@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +8,25 @@
 </head>
 <body>
     <header>
-        <h1>Hora do dia</h1>
+        <h1>Vamos contar</h1>
     </header>
-    <section>
-        <div>Olá 1</div>
-        <div>Imagem</div>
-    </section>
+    <form action="">
+        <div>
+            <label for="inicio">Início:</label>
+            <input type="number" name="inicio" id="inicio" required>
+        </div>
+        <div>
+            <label for="fim">Fim:</label>
+            <input type="number" name="fim" id="fim" required>
+        </div>
+        <div>
+            <label for="passo">Passo:</label>
+            <input type="number" name="passo" id="passo">
+        </div>
+        <input type="button" value="Contar" onclick="contar()">
+        <input type="reset" value="Resetar" onclick="resetar()">
+        <div id="res">Preparando a contagem...</div>
+    </form>
     <footer>
         <p>Feito por Júlio Luwungu</p>
     </footer>
