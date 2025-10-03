@@ -18,6 +18,14 @@ form {
     text-align: left;
 }
 
+select {
+    width: 180px;
+}
+
+div {
+    margin: 10px 5px;
+}
+
 footer {
     color: white;
 }
