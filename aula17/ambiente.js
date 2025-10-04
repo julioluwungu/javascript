@@ -2,9 +2,12 @@ let amigo = {nome: 'José',
     sexo: 'M',
     idade: 20,
     peso: 85.7,
-    engordou(p=0) {
+    engordar(p=0) {
         console.log('Engordou!')
         this.peso += p
-    }}
+    }
+}
 
-console.log(amigo)
+console.log(`Tipo: ${typeof(amigo)}`)
+amigo.engordar(10)
+console.log(`${amigo.nome} pesa ${amigo.peso}kg`)
