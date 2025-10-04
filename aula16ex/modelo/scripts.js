@@ -2,19 +2,23 @@ let vetor = []
 let div = document.createElement('div')
 let formulario = document.getElementsByTagName('form')[0]
 let sel = document.getElementById('seldados')
+let num = document.getElementById('numero')
 formulario.appendChild(div)
 
 function clicou() {
     div.innerHTML = ''
-    let num = Number(document.getElementById('numero').value)
+    let numero = Number(num.value)
     let opcao = document.createElement('option')
-    if (vetor.indexOf(num) != -1 || num > 100 || num < 1) {
+    if (vetor.indexOf(numero) != -1 || numero > 100 || numero < 1) {
         window.alert('Valor inválido ou já adicionado na lista!')
     } else {
-        vetor.push(num)
-        opcao.innerHTML = `Valor ${num} adicionado`
+        vetor.push(numero)
+        opcao.innerHTML = `Valor ${numero} adicionado`
         sel.appendChild(opcao)
     }
+
+    num.value = ''
+    num.focus()
 }
 
 function resultado() {
